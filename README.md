@@ -118,8 +118,7 @@ We will perform the same steps as in Windows, but with terminal commands for a m
 
 ---
 
-##Additional Note:
-Please ensure don't miss the Additional Steps to Prevent Potential Issues mentioned above.
+### Additional Note:
+Ensure don't miss the Additional Steps to Prevent Potential Issues mentioned above.
 
-
-**Thank you for your attention!**
+**Thanks for your attention!**
