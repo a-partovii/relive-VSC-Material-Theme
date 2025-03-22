@@ -101,7 +101,7 @@ Now, there are two methods: replacing files or rewriting the file via copy & pas
 3. To replace the themes file, use the following command:
 
    ```bash
-   cp Material-Theme-Ocean.json/usr/share/code/resources/app/extensions/theme-kimbie-dark/themes/kimbie-dark-color-theme.json
+   cp Material-Theme-Ocean.json /usr/share/code/resources/app/extensions/theme-kimbie-dark/themes/kimbie-dark-color-theme.json
    ```
    *(Pay attention to the name of the destination file if you're using a different method)*
 
