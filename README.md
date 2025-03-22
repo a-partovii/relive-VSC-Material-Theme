@@ -74,10 +74,10 @@ Be sure to save the files externally. You may need to redo this process if you e
 We will perform the same steps as in Windows, but with terminal commands for a more direct approach.
 
 1. **Choose Your Favorite Material Theme** 
-   First, you should choose your favorite Material Theme, the files for which I have included in this repository. 
+First, you should choose your favorite Material Theme, the files for which I have included in this repository. 
 
 2. **Locate the Default Themes Folder**
-   Choose your favorite Material Theme and then select the default theme you want to replace it with in the following directory:  
+Choose your favorite Material Theme and then select the default theme you want to replace it with in the following directory:  
 
    ```
    /usr/share/code/resources/app/extensions/
@@ -87,7 +87,7 @@ We will perform the same steps as in Windows, but with terminal commands for a m
    Within this directory, you will find several folders whose names start with `theme-`. These are the default themes linked to the application. After selecting the default VS Code theme you want to replace, open its folder and look for the subfolder named ‘themes’. Make sure to remember the exact directory path and the `.json` file name (actually copy this information and use them from the clipboard later).
 
 3. **Replace or Rewrite the File**  
-   Now, there are two methods: replacing files or rewriting the file via copy & paste. For example, in this guide, I’m demonstrating modifying `Material-Theme-Ocean.json` to `kimbie-dark-color-theme.json`. You can follow these steps with your chosen theme’s name. You may need to adapt the commands depending on your distribution or preferred method.
+Now, there are two methods: replacing files or rewriting the file via copy & paste. For example, in this guide, I’m demonstrating modifying `Material-Theme-Ocean.json` to `kimbie-dark-color-theme.json`. You can follow these steps with your chosen theme’s name. You may need to adapt the commands depending on your distribution or preferred method.
 
 ### Method 1: Replacing the File
 
