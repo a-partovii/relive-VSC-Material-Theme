@@ -73,12 +73,11 @@ Be sure to save the files externally. You may need to redo this process if you e
 
 We will perform the same steps as in Windows, but with terminal commands for a more direct approach.
 
-1. **Choose Your Favorite Material Theme: ** 
-First, you should choose your favorite Material Theme, the files for which I have included in this repository. 
+1. **Choose Your Favorite Material Theme**  
+   First, you should choose your favorite Material Theme, the files for which I have included in this repository.  
 
-2. **Locate the Default Themes Folder: **
-Choose your favorite Material Theme and then select the default theme you want to replace it with in the following directory:  
-
+2. **Locate the Default Themes Folder**  
+   Choose your favorite Material Theme and then select the default theme you want to replace it with in the following directory:  
    ```
    /usr/share/code/resources/app/extensions/
    ```
