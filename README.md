@@ -1,16 +1,22 @@
-
 ## How It Works
 
-First, you should know that our goal is to **replace the `.json` code** of your chosen Material Theme (which I have included in this repository) with the code from one of the default VS Code themes. This way, whenever you select that specific default theme in the program, your chosen Material Theme will be applied instead.
+First, you should know the goal is to **replace the `.json` code** of your chosen Material Theme (which I have included in this repository) with the code from one of the default VS Code themes. This way, whenever you select that specific default theme in the program, your chosen Material Theme will be applied instead.
 
-Some features and scripts, like color accents, might not work as they did in the past, and it will display like default settings.
+Some features and scripts, such as color accents, may not work as before, and will appear with default settings.
+
+Use the links to jump directly to any section:
+- [Windows Instructions](#for-windows)
+- [Linux Instructions](#for-linux)
+- [macOS Instructions](#for-macos)
+- [Additional Steps](#additional-steps-to-prevent-potential-issues)
 
 ---
+<br>
 
-## In Windows
+## For Windows
 
 1. **Choose Your Favorite Material Theme**  
-   First, you should choose your favorite Material Theme, the files for which I have included in this repository.
+   First, select your preferred Material Theme from the files in this repository
 
 2. **Locate the VS Code Default Themes Folder**  
    Next, you can find the VS Code default themes folder in this directory:
@@ -18,33 +24,40 @@ Some features and scripts, like color accents, might not work as they did in the
    ```
    C:\Users\Your-user-name\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions
    ```
-   *(Or the equivalent path on your system, make sure to replace "Your-user-name" with your actual username.)*
+   *(Or the equivalent path on your system, make sure to replace `"Your-user-name"` with your actual username.)*
 
-   Within this directory, there are several subfolders whose names start with `theme-`. These are the default themes we are looking for. Almost each theme has a corresponding name in the application.
+   Within this directory, there are several subfolders whose names start with `theme-`. These are the default themes we are looking for. Almost every theme has a corresponding name in the application.
 
 3. **Choose the Default Theme to Replace**  
-   Now, you can choose the default theme that will be replaced by your chosen Material Theme and open its folder.
+   Now, pick a default theme folder (*e.g., `theme-defaults`*) and open it. Note the name of the `.json` file in its themes subfolder.
 
-4. **Manipulate the `.json` File in the 'themes' Folder**  
-   Next, you will need to edit the `.json` file in the ‘themes’ folder that you open in this step. At this point, there are two methods:
+4. **Replace or overwrite the file**  
+   Next, you will need to edit the `.json` file in the ‘themes’ folder that you open in this step. At this point, we have two options:
 
-   - **Method 1**: Rename the chosen Material Theme .json file to the exact name of the default theme's .json file in the 'themes' folder and replace the existing file.
+**Option 1 : Edit the Existing File**, Alternatively, you can copy all the code from your chosen Material Theme and paste it into the default theme's `.json` file in the 'themes' folder, then save it using an IDE.
+
+**Option 2 : Copy and Replace the File**, Rename the chosen Material Theme `.json` file to the exact name of the default theme's `.json` file in the 'themes' folder and replace the existing file.
+(*You may need to run File Explorer as administrator because permission issues*)
    
-   - **Method 2**: Alternatively, you can copy all the code from your chosen Material Theme and paste it into the default theme's `.json` file in the 'themes' folder, then save it using an IDE.
-
-  
    Now you can select the edited theme in the application and enjoy!
-
+   
 ---
+<br>
 
 ## Additional Steps to Prevent Potential Issues
 
-I recommend these two additional steps to prevent possible incoming issues:
+I recommend these two additional steps to prevent potential issues caused by updates:
 
-1. **Make the Edited `.json` File Read-Only**  
-   Right-click on the edited `.json` file > Select Properties > Mark "Read-Only" (Windows).
+### Make the Edited `.json` File Read-Only
 
-2. **Add the Following Lines to Your `settings.json`**  
+**On Windows:** Right-click on the edited `.json` file > Select Properties > Mark "Read-Only"
+
+**On Linux:** Run in the terminal:
+```bash 
+sudo chmod 444 /path/to/your/file.json
+```
+
+### Add the Following Lines to Your `settings.json`
    This can be easily find by searching for "customizations" in the application settings:
 
    ```json
@@ -60,64 +73,64 @@ I recommend these two additional steps to prevent possible incoming issues:
    "extensions.showRecommendationsOnlyOnDemand": true
    ```
 
-   **Attention**: Don't forget to check for updates manually if you're doing this.
-
----
+**Attention:** Don't forget to check for updates manually if you're doing this.
 
 ### Important Note:
 Be sure to save the files externally. You may need to redo this process if you ever have to recreate the setup.
 
 ---
+<br>
 
-## In Linux
+## For Linux
 
-We will perform the same steps as in Windows, but with terminal commands for a more direct approach.
+We will follow the same steps as in Windows, but using terminal commands for a more direct and efficient approach.
 
-1. **Choose Your Favorite Material Theme**  
-   First, you should choose your favorite Material Theme, the files for which I have included in this repository.  
+1. **1. Choose Your Favorite Material Theme**  
+   Select your preferred Material Theme from the files in this repository.  
 
-2. **Locate the Default Themes Folder**  
-   Choose your favorite Material Theme and then select the default theme you want to replace it with in the following directory:  
+2. **2. Locate the Default Themes Folder**  
+   Find the default theme you want to replace it with in the following directory:  
    ```
    /usr/share/code/resources/app/extensions/
    ```
    *(Or the equivalent path in your system)*
 
-   Within this directory, you will find several folders whose names start with `theme-`. These are the default themes linked to the application. After selecting the default VS Code theme you want to replace, open its folder and look for the subfolder named ‘themes’. Make sure to remember the exact directory path and the `.json` file name (actually copy this information and use them from the clipboard later).
+   Within this directory, you will find several folders whose names start with `theme-`. These are the default themes linked to the application. After selecting the default VS Code theme you want to replace, open its folder and look for the subfolder named ‘themes’. Make sure to remember the exact directory path and the `.json` file name (*actually copy this and use it from the clipboard later*).
 
-3. **Replace or Rewrite the File**  
-Now, there are two methods: replacing files or rewriting the file via copy & paste. For example, in this guide, I’m demonstrating modifying `Material-Theme-Ocean.json` to `kimbie-dark-color-theme.json`. You can follow these steps with your chosen theme’s name. You may need to adapt the commands depending on your distribution or preferred method.
+3. **3. Replace or overwrite the File**  
+replacing files or overwrite the codes via copy & paste. In this guide, Examples below use `Material-Theme-Ocean.json` replacing `kimbie-dark-color-theme.json` in `theme-kimbie-dark/themes/`. You can follow these steps with your chosen theme’s name. You may need to adapt the commands depending on your distribution or preferred method.
 
-### Method 1: Replacing the File
-
-1. Go to the Material Theme files folder
-   
-2. open the terminal there and Log in as root by typing:
-
-   ```
-   su root
-   ```
-
-3. To replace the themes file, use the following command:
+**Option 1 : Edit the existing file via Copy & Paste**, Open the file with a text editor like nano:
 
    ```bash
-   cp Material-Theme-Ocean.json /usr/share/code/resources/app/extensions/theme-kimbie-dark/themes/kimbie-dark-color-theme.json
+   sudo nano /usr/share/code/resources/app/extensions/theme-kimbie-dark/themes/kimbie-dark-color-theme.json
    ```
-   *(Pay attention to the name of the destination file if you're using a different method)*
 
-### Method 2: Rewriting the File via Copy & Paste
+Once the file opens, paste the copied code into it and save the file by pressing `Ctrl + O` and exit.
 
-1. In the terminal, type:
+
+**Option 2 : Replacing the File**, Navigate to this repository's folder in the terminal(*open Terminal there*).
+
+To replace the themes file, use the following command:
 
    ```bash
-   nano /usr/share/code/resources/app/extensions/theme-kimbie-dark/themes/kimbie-dark-color-theme.json
+   sudo cp Material-Theme-Ocean.json /usr/share/code/resources/app/extensions/theme-kimbie-dark/themes/kimbie-dark-color-theme.json
    ```
+   *(Pay attention to the name of the destination file if you're using different stuff)*
 
-2. Once the file opens, paste the copied code into it and save the file by pressing `Ctrl + O`.
+Restart VS Code and select the modified theme.
 
+---
+<br>
+
+## For macOS
+If you are on macOS, the process is similar to Linux; the default path is `/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/`, Use sudo for commands.
+
+<br>
 ---
 
 ### Additional Note:
 Ensure don't miss the Additional Steps to Prevent Potential Issues mentioned above.
 
-**Thanks for your attention!**
+**Thanks for your attention :heart:**
+
