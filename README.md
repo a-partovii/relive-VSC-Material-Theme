@@ -85,10 +85,10 @@ Be sure to save the files externally. You may need to redo this process if you e
 
 We will follow the same steps as in Windows, but using terminal commands for a more direct and efficient approach.
 
-1. **1. Choose Your Favorite Material Theme**  
+1. **Choose Your Favorite Material Theme**  
    Select your preferred Material Theme from the files in this repository.  
 
-2. **2. Locate the Default Themes Folder**  
+2. **Locate the Default Themes Folder**  
    Find the default theme you want to replace it with in the following directory:  
    ```
    /usr/share/code/resources/app/extensions/
@@ -97,7 +97,7 @@ We will follow the same steps as in Windows, but using terminal commands for a m
 
    Within this directory, you will find several folders whose names start with `theme-`. These are the default themes linked to the application. After selecting the default VS Code theme you want to replace, open its folder and look for the subfolder named ‘themes’. Make sure to remember the exact directory path and the `.json` file name (*actually copy this and use it from the clipboard later*).
 
-3. **3. Replace or overwrite the File**  
+3. **Replace or overwrite the File**  
 replacing files or overwrite the codes via copy & paste. In this guide, Examples below use `Material-Theme-Ocean.json` replacing `kimbie-dark-color-theme.json` in `theme-kimbie-dark/themes/`. You can follow these steps with your chosen theme’s name. You may need to adapt the commands depending on your distribution or preferred method.
 
 **Option 1 : Edit the existing file via Copy & Paste**, Open the file with a text editor like nano:
